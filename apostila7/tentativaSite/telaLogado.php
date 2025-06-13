@@ -97,7 +97,7 @@ if (!isset($_SESSION["usuarioLogin"])) {
 <body class="<?= $tema; ?>">
     <!-- O body recebe uma classe por padrão, (TEMA), que quando o tema é mudado, ele muda a classe perante a variavel do tema 
 mudada no setTema.php  -->
-    <div class="dashboard-container <?= $tema; ?>">
+    <div class="dashboard-container">
         <h1>Bem vindo <?php echo htmlspecialchars($_SESSION["usuarioLogin"]) ?></h1>
 
         <?php
@@ -112,8 +112,7 @@ mudada no setTema.php  -->
         <a href="setTema.php?tema=claro">🌞 Tema Claro</a> |
         <a href="setTema.php?tema=escuro">🌙 Tema Escuro</a>
 
-
-
+        <a href="sair.php" class="logout-button">Sair</a>
     </div>
 </body>
 
